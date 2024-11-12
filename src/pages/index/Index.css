@@ -1,0 +1,207 @@
+html {
+  background-color: #D7E2FF;
+  overflow: hidden;
+  }
+  .btn-white {
+    z-index: 3;
+    border-radius: 20px;
+    width: 11.2rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: white;
+    color: #5D70DF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0.313rem;
+    z-index: 5;
+  }
+  .btn-white2 {
+    z-index: 3;
+    border-radius: 20px;
+    width: 5rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: white;
+    color: #5D70DF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0.313rem;
+    z-index: 5;
+  }
+  
+  .btn-white:hover {
+    border-radius: 20px;
+    width: 11.2rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0.1rem solid #5D70DF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0.313rem;
+    z-index: 5;
+  }
+  
+  .btn-transparent {
+    border-radius: 20px;
+    width: 11.2rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background-color: #5D70DF;
+    border: 0.1rem solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0.313rem;
+    z-index: 5;
+  }
+  
+  .btn-transparent:hover {
+    border-radius: 20px;
+    width: 11.2rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    border: 0.1rem solid #5D70DF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0.313rem;
+    z-index: 5;
+  }
+  
+  .logo {
+    z-index: 100;
+    animation: comeRocket 2s linear;
+    /* animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    animation-fill-mode: forwards; */
+  }
+  .logo.animate {
+    animation: goRocket 3s linear forwards;
+  }
+  .examine-box {
+    background-color: white;
+    border-radius: 10px;
+  }
+  .buttons {
+    z-index: 2;
+    top: 2%;
+    right: 1.5%;
+    position: absolute;
+    display: flex;
+
+  }
+  .welcome-message {
+    z-index: 2;
+    top: 5%;
+    right: 3%;
+    position: absolute;
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @-o-keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+
+  @keyframes move {
+    0% {transform: translateY(0) rotateX(0);}
+    25% {transform: translateY(-30px) rotateX(40deg);}
+    50% {transform: rotateX(0) translateY(0);}
+    75% {transform: rotateX(-40deg) translateY(30px);}
+    100% {transform: rotateX(0) translateY(0);}
+  }
+  
+  @keyframes comeRocket {
+    0% {
+      transform: translate(-50vw, 50vh) rotate(0deg);
+    }
+    100% {
+      transform: translate(0vw, 0vh) rotate(0deg);
+    }
+  }
+
+  @keyframes goRocket {
+    0% {
+      transform: translate(0vw, 0vh) rotate(0deg);
+    }
+    100% {
+      transform: translate(50vw, -50vh) rotate(0deg);
+    }
+  }
+#scrollbar5::-webkit-scrollbar {
+  background-color: #D7E2FF;
+  width: 12px;
+  border-radius: 10px;
+}
+
+#scrollbar5::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+#scrollbar5::-webkit-scrollbar-thumb {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, #5D70DF), color-stop(1, #5D70DF));
+    border-radius: 10px;
+}

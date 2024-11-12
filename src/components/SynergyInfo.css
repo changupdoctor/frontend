@@ -1,0 +1,79 @@
+@keyframes bounceIn {
+    0%, 100% {
+      transform: scale(0.7);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.01);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .bounce-in {
+    animation: bounceIn 0.5s ease-out;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
+
+  @keyframes spin {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-500%); }
+  }
+  
+  @keyframes slot-machine {
+    0% { transform: translateY(0%); }
+    100% { transform: translateY(-500%); }
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 7em;
+    margin: auto;
+  }
+  
+  .icon-container .icon {
+    flex-shrink: 0;
+    height: 3em;
+    width: 2em;
+    color: white;
+  }
+  
+  .icon-container.stop .icon {
+    animation: none;
+  }
+  .icon-container.stop .ball {
+    animation: none;
+  }
+  .stop .ball {
+    animation: none;
+  }
+
+  .icon-container .icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 3em; /* 아이콘 + 텍스트 높이 */
+  }
+  
+  .icon-container.stop .icon-wrapper {
+    animation: bounceIn 1s linear;
+  }
+  .ball {
+    height: 5em;
+    width: 4.5em;
+    border-radius: 50%;
+    animation: slot-machine 1s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8A2BE2;
+  }

@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d0e0f0;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .rocket {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    animation: moveRocket 5s linear infinite;
+  }
+  
+  .money-container {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    animation: dropMoney 5s linear infinite;
+  }
+  
+  .money {
+    width: 20px;
+    height: auto;
+  }
+  
+  @keyframes moveRocket {
+    0% {
+      transform: translate(0, 100vh) rotate(45deg);
+    }
+    100% {
+      transform: translate(100vw, -100vh) rotate(45deg);
+    }
+  }
+  
+  @keyframes dropMoney {
+    0% {
+      transform: translate(0, 100vh);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      transform: translate(100vw, -100vh);
+      opacity: 1;
+    }
+  }
+  
